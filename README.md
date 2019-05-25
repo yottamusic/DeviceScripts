@@ -1,7 +1,7 @@
 # DeviceScripts
 Check_Availible_Speaker.sh
 
-Check_Availible_Speaker.sh -c to get speaker country
+Check_Availible_Speaker.sh -c to get speaker count
 Check_Availible_Speaker.sh -l to get speaker list
 
 Check_Wifi_Mode.sh will return STA/AP as the WIFI mode
