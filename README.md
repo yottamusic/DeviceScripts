@@ -20,3 +20,4 @@ Play_Sound.sh $1
 $1 is the serial number of speaker SSID
 
 Wifi_Connect.sh SSID PIN    -> connect to SSID using PIN
+
