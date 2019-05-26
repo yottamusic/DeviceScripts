@@ -24,4 +24,5 @@ fi
 /root/i2crw0 w 33 $1 0x20 1
 /root/i2crw0 w 33 $1 0x21 1
 
+printf '{"todo": "Set Mono Speaker LED", "result": "success"}\n'
 

@@ -23,5 +23,5 @@ fi
 
 /root/i2crw0 w 33 $1 0x20 1
 
-
+printf '{"todo": "Set Left Speaker LED", "result": "success"}\n'
 

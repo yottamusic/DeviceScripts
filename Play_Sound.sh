@@ -7,3 +7,4 @@ fi
 # $1 is the speaker serial number in the middle of the SSID
 /root/i2crw0 w 33 40 $1
 
+printf '{"todo": "Play Sound", "result": "success"}\n'

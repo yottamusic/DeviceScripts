@@ -11,14 +11,12 @@ fi
 
 if [ "$1" = "Mono" ]; then
   # other commands herer
-  echo Mono for $name OK
-  exit 0
+  printf '{"todo": "Set Mono Mode", "result": "success"}\n'
 fi
 
 if [ "$1" = "Stereo" ]; then
   # other commands herer
-  echo Stereo for $name OK
-  exit 0
+  printf '{"todo": "Set Stereo Mode", "result": "success"}\n'
 fi
 
 
