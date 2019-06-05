@@ -4,19 +4,22 @@ if [ $# != 2 ]; then
   exit 0
 fi
 
-name=`iw wlan0 scan | grep SSID | grep $2`
+name=`iwlist wlan0 scanning | grep SSID | grep $1`
 if [ "$name" = "" ]; then
-  exit 0
+  a=`cat /root/hostapd.conf | grep ssid | grep $1`
+  if [ "$a" = "" ]; then
+    exit 0
+  fi
 fi
 
-if [ "$1" = "Mono" ]; then
+if [ "$2" = "mono" ]; then
   # other commands herer
-  printf '{"todo": "Set Mono Mode", "result": "success"}\n'
+  printf '{"todo": "Set Mono Mode '$1'", "result": "success"}\n'
 fi
 
-if [ "$1" = "Stereo" ]; then
+if [ "$2" = "stereo" ]; then
   # other commands herer
-  printf '{"todo": "Set Stereo Mode", "result": "success"}\n'
+  printf '{"todo": "Set Stereo Mode '$1'", "result": "success"}\n'
 fi
 
 

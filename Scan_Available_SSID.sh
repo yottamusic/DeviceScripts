@@ -26,6 +26,6 @@ do
 done
 
 
-printf '\b"}\n'
+printf '"}\n'
 
 
