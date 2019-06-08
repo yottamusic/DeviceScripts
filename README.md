@@ -21,3 +21,13 @@ $1 is the serial number of speaker SSID
 
 Wifi_Connect.sh SSID PIN    -> connect to SSID using PIN
 
+need to install 
+isc-dhcp-client (dhclient)
+dnsmasq (dns and dhcpd)
+iptables
+
+fpga.sh is the start log
+dnsmasq* put to /etc
+
+and need to update kernel with iptable supported version and copy all the KOs into /lib/modules....
+

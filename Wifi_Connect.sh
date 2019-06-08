@@ -5,7 +5,7 @@
 modname="8723bu.ko"
 
 pkill hostapd > /dev/null
-pkill busybox > /dev/null
+#pkill busybox > /dev/null
 ifconfig wlan0 down
 rmmod $modname
 
@@ -42,4 +42,4 @@ printf '{"todo": "Wifi Connect", "result": "failure"}'
 pkill wpa_supplicant > /dev/null
 ifconfig wlan0 192.168.1.1 up > /dev/null
 hostapd /root/hostapd.conf > /dev/null &
-busybox udhcpd /root/udhcpd.conf > /dev/null
+#busybox udhcpd /root/udhcpd.conf > /dev/null
